@@ -76,9 +76,9 @@ void main(List<String> arguments) {
 
   generatedOutput.addAll(iconDefinitions.values);
 
-  generatedOutput.addAll(['',
+  generatedOutput.addAll([
     '       default:',
-    '         return FontAwesomeIcons.exclamation;',
+    "         return IconData(0xe14c, fontFamily: 'MaterialIcons');",
     '     }',
     '   }',
     '}'

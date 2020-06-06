@@ -3190,9 +3190,8 @@ extension FaIconEx on String {
         return FontAwesomeIcons.youtubeSquare;
       case 'zhihu':
         return FontAwesomeIcons.zhihu;
-
       default:
-        return FontAwesomeIcons.exclamation;
+        return IconData(0xe14c, fontFamily: 'MaterialIcons');
     }
   }
 }
