@@ -8,6 +8,9 @@ dart ./tool/generate_example.dart ./icons.json
 dartfmt -w ./lib/font_awesome_flutter.dart
 dartfmt -w ./example/lib/icons.dart
 
+dart ./tool/generate_font_extension.dart /tmp/icons.json
+dartfmt -w ./lib/font_awesome_flutter_extension.dart
+
 else
 echo "Updating icons to newest version."
 pushd lib/fonts/
@@ -24,6 +27,8 @@ dart ./tool/generate_font.dart /tmp/icons.json
 dart ./tool/generate_example.dart /tmp/icons.json
 dartfmt -w ./lib/font_awesome_flutter.dart
 dartfmt -w ./example/lib/icons.dart
+dart ./tool/generate_font_extension.dart /tmp/icons.json
+dartfmt -w ./lib/font_awesome_flutter_extension.dart
 
 rm /tmp/icons.json
 fi
