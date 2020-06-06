@@ -1,4 +1,4 @@
-library font_awesome_flutter_extension;
+library font_awesome_flutter;
 
 import 'package:flutter/cupertino.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
